@@ -1,0 +1,8 @@
+@import './utilitarios/global.css';
+@import './utilitarios/tipografia.css';
+@import './utilitarios/cores.css';
+
+@import './site/header.css';
+@import './site/home.css';
+@import './site/formacao.css';
+@import './site/projetos.css';

@@ -1,0 +1,139 @@
+.formacao-fieldset{
+    border-radius: 5px;
+    border: 2px solid var(--cor-pl);
+    position: relative;
+}
+
+.fieldset-title{
+    position: absolute;
+    background-color: white;
+    padding: 0px 5px;
+    top:-15px;
+}
+
+#formacao span{
+    color: var(--cor-p)
+}
+
+.formacao-titulo{
+    position: relative;
+}
+
+.formacao-titulo::before{
+    content:'';
+    width: 30px;
+    height: 30px;
+    background-color: var(--cor-p);
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top:-14px;
+    left: -2px;
+
+}
+
+.main-formacao{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(90vw - 60px);
+    border-left: 8px solid green;
+    border-radius: 5px;
+    padding: 6px 40px;
+    background-image: linear-gradient(180deg, #FBFBFB 0%, #F5F5F5 100%);
+    position: relative;
+    margin-left: 40px;
+}
+
+.main-formacao::before{
+    content:'2012';
+    position: absolute;
+    left:-50px;
+    color: var(--cor-c6);
+}
+
+.f-facul{
+    max-width: 400px;
+    margin-bottom: 8px;
+}
+
+.f-lista-cursos
+{
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 78px;
+}
+
+.f-curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 8px solid var(--cor-c3);
+    border-radius: 5px;
+    padding: 6px 40px;
+    background-image: linear-gradient(180deg, #FBFBFB 0%, #F5F5F5 100%);
+    position: relative;
+}
+
+.f-lista-cursos li{
+    margin-bottom:40px;
+}
+
+.f-lista-cursos li::before{
+    position: absolute;
+    left:-50px;
+    color: var(--cor-c4);
+}
+
+.f-curso::before{
+    content:'2022';
+}
+
+.f-skills{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.f-skills li{
+    background-color: var(--cor-pl);
+    color:var(--cor-c12);
+}
+
+.idioma-title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.idioma-title+p{
+    margin-left:40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 640px){
+    .main-formacao::before{
+        position: relative;
+        align-self: flex-start;
+        padding-left: 50px;
+        font-size: .6rem;
+    }
+
+    .f-lista-cursos li::before{
+        position: relative;
+        align-self: flex-start;
+        padding-left: 50px;
+        font-size: .6rem;
+    }
+
+    .main-formacao,
+    .f-curso{
+        padding: 6px 20px;
+    }
+
+    .f-lista-cursos{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:580px){
+
+}

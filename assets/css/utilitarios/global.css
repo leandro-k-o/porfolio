@@ -1,0 +1,74 @@
+:root{
+    /* cores primarias  */
+
+    --cor-p: #4AB851;
+    --cor-pd:#37A63E;
+    --cor-pl: #ECFFE8; 
+
+    /* tons de cinza  */
+
+    --cor-c1:#FBFBFB;
+    --cor-c2:#F0F0F0;
+    --cor-c3:#E0E0E0;
+    --cor-c4:#CCCCCC;
+    --cor-c5:#B8B8B8;
+    --cor-c6:#A3A3A3;
+    --cor-c7:#8F8F8F;
+    --cor-c8:#7A7A7A;
+    --cor-c9:#666666;
+    --cor-c10:#525252;
+    --cor-c11:#3D3D3D;
+    --cor-c12:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2000px;
+}
+
+img{
+    display: block;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.border-r{
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin:0;
+}
+
+.flags
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.flags li{
+        padding: 5px 10px;
+        border-radius: 5px;
+}

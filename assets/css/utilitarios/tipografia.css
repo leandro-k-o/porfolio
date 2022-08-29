@@ -1,0 +1,61 @@
+.t-1{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    /* font-size:3rem; */
+    font-size: calc(1.5rem + 1.3vw);
+    line-height: 1.125;
+}
+
+.st-1{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    /* font-size: calc(.8rem + 1.8vw); */
+    line-height: 1.125;
+}
+
+.st-2{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.125;
+}
+
+.st-3{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    /* font-size: calc(.8rem + .8vw); */
+    line-height: 1.125;
+}
+
+.menu-link{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.text-lg{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.1;
+}
+
+.text-md{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.1;
+}
+
+.text-sm{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1;
+}
