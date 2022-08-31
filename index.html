@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandro Kenji Oshiro</title>
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,10 +13,10 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-light navbar-expand-sm nav-lko">
+    <header class="container">
+        <nav class="navbar navbar-light navbar-expand-sm nav-lko fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="Logotipo"></a>
+                <a class="navbar-brand" href="#home"><img src="img/logo.svg" alt="Logotipo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,15 +26,15 @@
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navbar">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="formacao" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar" >Formação</a>
+                                <a class="nav-link" href="#formacao" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar" data-link>Formação</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="projetos" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Projetos</a>
+                                <a class="nav-link" href="#projetos" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar" data-link>Projetos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contato" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Contato</a>
+                                <a class="nav-link" href="#contato" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar" data-link>Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -45,53 +46,53 @@
     <main id="home">
         <div class="container mt-5">
             <div class="row pt-5 home-container mx-sm-1">
-                <div class="col-sm-6 home-text py-sm-5 py-3">
+                <div class="col-md-6 home-text py-sm-5 py-3 shadow-sm" data-animate="s-left">
                     <div class="home-text-container border-r">
-                        <h1 class="t-1">olá, eu me chamo <br> Leandro Kenji Oshiro</h1>
+                        <h1 class="t-2">olá, eu me chamo <br> Leandro Kenji Oshiro</h1>
                         <h1 class="st-1"><span>&#60; </span>desenvolvedor front-end <span>/&#62;</span></h1>
                         <p>Itanhaém - SP</p>
                     </div>
                 </div>
-                <div class="col-sm-6 img-container ps-md-0">
-                    <img src="img/pingo-neka-sofa.jpg" alt="Leandro com 2 cães no sofá" width="546.67" height="410"/>
+                <div class="col-md-6 img-container ps-md-0" data-animate="s-right">
+                    <img src="img/pingo-neka-sofa.jpg" alt="Leandro com 2 cães no sofá" width="546.67" height="410" class="shadow-sm" />
                 </div>
             </div>
         </div>
             
     </main>
 
-    <section id="formacao" class="mt-5">
+    <section data-scrollNav id="formacao" class="mt-5">
         <div class="container">
             <div class="row mb-3">
-                <h1 class="st-1 cor-c12 formacao-titulo">formação<span>.</span></h1>
-                <div class="main-formacao mt-3 cor-c10">
+                <h1 class="t-1 cor-c12 formacao-titulo" data-animate="s-left">formação<span>.</span></h1>
+                <div class="main-formacao mt-3 cor-c10 shadow-sm" data-animate="grow s-left ">
                     <h4 class="st-3 f-facul">Análise e Desenvolvimento de Sistemas com ênfase em Jogos Digitais</h4>
                     <p class="text-md cor-c6">FATEC São Caetano do  Sul</p>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-7 formacao-fieldset">
-                    <h2 class="st-2 fieldset-title">cursos<span>.</span></h2>
+                    <h2 class="st-2 fieldset-title" data-animate="s-left">cursos<span>.</span></h2>
                     <ul class="text-md f-lista-cursos container">
-                        <li class="f-curso">
+                        <li class="f-curso shadow-sm" data-animate="grow s-left">
                             <h5 class="cor-c10">UI Design</h5>
                             <p class="text-sm cor-c6">Origamid</p>
                         </li>
-                        <li class="f-curso">
+                        <li class="f-curso shadow-sm" data-animate="grow s-left">
                             <h5 class="cor-c10">HTML e CSS</h5>
                             <p class="text-sm cor-c6">Origamid</p>
                         </li>
-                        <li class="f-curso">
+                        <li class="f-curso shadow-sm" data-animate="grow s-left">
                             <h5 class="cor-c10">JavaScript ES6</h5>
                             <p class="text-sm cor-c6">Origamid</p>
                         </li>
-                        <li class="f-curso">
+                        <li class="f-curso shadow-sm" data-animate="grow s-left">
                             <h5 class="cor-c10">React</h5>
                             <p class="text-sm cor-c6">Origamid</p>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 ms-md-5 mt-5 mt-md-0 formacao-fieldset">
+                <div class="col-md-4 ms-md-5 mt-5 mt-md-0 formacao-fieldset" data-animate="s-right">
                             <h2 class="st-2 fieldset-title">skills<span>.</span></h2>
                             <ul class="text-sm flags f-skills container">
                                 <li>HTML</li>
@@ -109,38 +110,86 @@
         </div>
     </section>
 
-    <section id="projetos" class="mt-5 container ">
+    <section data-scrollNav id="projetos" class="mt-5 container-xl">
         <div class="row">
-            <div class="projeto-title">
-                <h1 class="t-1 cor-c1">projetos<span class="cor-p">.</span></h1>
+            <div class="projeto-title" data-animate="s-left">
+                <h1 class="t-1 cor-c1 projeto-title-t">projetos<span class="cor-p">.</span></h1>
                 <p class="cor-c5 text-md mt-4">Projetos realizados para estudo e para fins profissionais.</p>
             </div>
             <div class="projetos-container row g-0">
-                <div class="col-sm projetos-item">tes</div>
-                <div class="col-sm projetos-item">tes</div>
-                <div class="col-sm projetos-item">tes</div>
-            </div>
-            <div class="projeto-descricao row">
-                <div class="col col-sm-6">
-                    <h3 class="st-2 cor-p mb-3">nome do projeto<span class="cor-c1">.</span></h3>
-                    <p class="text-md cor-c5">Este proejto foirealizado com tal tal tal eltal  .Consumindo  apie  fanzedo diversascoisas legais. Este proejto foirealizado com tal tal tal eltal  .Consumindo  apie  fanzedo diversascoisas legais.Este proejto foirealizado com tal tal tal eltal  .Consumindo  apie  fanzedo diversascoisas legais.</p>
-                    <a class="proj-btn text-sm">SAIBA MAIS</a>
+                <div class="col-lg col-md-5 col-sm-7 projetos-item shadow-sm" data-animate="s-bottom" data-p-item>
+                    <div class="projetos-item-img">
+                        <img src="img/p-item1.jpg" alt="Foto do primeiro portfolio" />
+                    </div>
+                    <div class="content">
+                        <span class="stack">HTML | CSS | JAVASCRIPT</span>
+                        <a href="https://leandro-k-o.github.io/port2/" target="_blank">
+                            <h3 class="st-2 p-item-title">primeiro portfólio<span class="cor-p">.</span></h3>
+                        </a>
+                        <p class="text-sm p-item-text">Portfólio criado em HTML/CSS e JavaScript puro. Procurei deixar o site totalmente responsivo e funcionando independente de CSS/JavaScript.</p>
+                        <span class="projeto-data">06/2022</span>
+                    </div>
                 </div>
-                <div class="col-auto"></div>
-                <div class="col-sm-4">
-                    <h4 class="st-3 cor-c4 tecno-title">Tecnologias</h4>
-                    <ul class="text-sm flags container tecno-flags">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>REACT</li>
-                        <li>BOOTSTRAP</li>
-                        <li>JAVASCRIPT</li>
-                        <li>UI DESIGN</li>
-                    </ul>
+                <div class="col-lg col-md-5 col-sm-7 projetos-item shadow-sm" data-animate="s-bottom" data-p-item>
+                    <div class="projetos-item-img">
+                        <img src="img/p-item2.jpg" alt="Foto do portfolio recente" />
+                    </div>
+                    <div class="content">
+                        <span class="stack">HTML | CSS | JAVASCRIPT | BOOTSTRAP</span>
+                        <a href="">
+                            <h3 class="st-2 p-item-title">portfólio recente<span class="cor-p">.</span></h3>
+                        </a>
+                        <p class="text-sm p-item-text">Utilizei HTML/CSS/JavaSript puro e alguns recursos do Bootstrap. Desenhei o site no Figma e tentei deixá-lo simples e funcional. </p>
+                        <span class="projeto-data">08/2022</span>
+                    </div>
+                </div>
+                <div class="col-lg col-md-5 col-sm-7 projetos-item shadow-sm" data-animate="s-bottom" data-p-item>
+                    <div class="col-sm projetos-item">
+                        <div class="projetos-item-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="content">
+                            <span class="stack">HTML | CSS | JAVASCRIPT</span>
+                            <a href="">
+                                <h3 class="st-2 p-item-title">projeto 3<span class="cor-w">.</span></h3>
+                            </a>
+                            <p class="text-sm p-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis placeat culpa repudiandae incidunt odio cumque harum, excepturi doloribus!</p>
+                            <span class="projeto-data">22/07/2022</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section data-scrollNav id="contato" class="mt-5 container-lg">
+        <div class="mt-5 contato-container row">
+            <div class="col-md contato-img" data-animate="s-left">
+                <img src="img/euperfil.jpg" alt="Minha foto de perfil" height="480" width="400" class="shadow-sm"/>
+            </div>
+            <div class="col-md contato-content" data-animate="s-right">
+                <h1 class="t-1 contato-title">contato<span class="cor-w">.</span></h1>
+                <p class="text-md cor-c3">Vamos conversar para realizar um projeto juntos.</p>
+                <div class="contato-email">
+                    <img src="img/mail.svg" alt="">
+                    <span class="text-md cor-c3">leandro.k.oshiro@gmail.com</span>
+                </div>
+                <div class="contato-redes" data-animate="s-bottom">
+                    <a href="https://www.linkedin.com/in/leandro-kenji-oshiro-91b59940/" target="_blank">
+                        <img src="img/linkedin.svg" alt="Logotipo Linkedin">
+                    </a>
+                    <a href="https://github.com/leandro-k-o" target="_blank">
+                        <img src="img/github.svg" alt="Logotipo Github">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p>Desenvolvido por Leandro Kenji Oshiro</p>
+    </footer>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

@@ -9,6 +9,7 @@ header{
 header .nav-lko{
     width: 100%;
     border-bottom: 3px solid var(--cor-c1);
+    background-color: var(--cor-c1);
 }
 
 header ul{
@@ -19,6 +20,13 @@ header ul{
 
 header ul li a.nav-link{
     color: var(--cor-c12);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+header ul li a.nav-link .active{
+    color: var(--cor-pbd);
 }
 
 .offcanvas-lko{

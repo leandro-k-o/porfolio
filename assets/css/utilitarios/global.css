@@ -3,10 +3,11 @@
 
     --cor-p: #4AB851;
     --cor-pd:#37A63E;
+    --cor-pbd:#002E03;
     --cor-pl: #ECFFE8; 
 
     /* tons de cinza  */
-
+    
     --cor-c1:#FBFBFB;
     --cor-c2:#F0F0F0;
     --cor-c3:#E0E0E0;
@@ -34,7 +35,6 @@ html{
 body{
     max-width: 1200px;
     margin:0 auto;
-    height: 2000px;
 }
 
 img{
@@ -72,3 +72,7 @@ h5{
         padding: 5px 10px;
         border-radius: 5px;
 }
+
+
+
+

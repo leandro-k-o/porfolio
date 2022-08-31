@@ -1,3 +1,7 @@
+#formacao{
+    padding-top: 50px;
+}
+
 .formacao-fieldset{
     border-radius: 5px;
     border: 2px solid var(--cor-pl);
@@ -34,9 +38,10 @@
 
 .main-formacao{
     display:flex;
+    flex-basis: calc(90vw - 60px);
     flex-direction: column;
     justify-content: center;
-    width: calc(90vw - 60px);
+    max-width: 80vw;
     border-left: 8px solid green;
     border-radius: 5px;
     padding: 6px 40px;

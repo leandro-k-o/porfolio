@@ -1,4 +1,5 @@
 @import './utilitarios/global.css';
+@import './utilitarios/animacoes.css';
 @import './utilitarios/tipografia.css';
 @import './utilitarios/cores.css';
 
@@ -6,3 +7,4 @@
 @import './site/home.css';
 @import './site/formacao.css';
 @import './site/projetos.css';
+@import './site/contato.css';
