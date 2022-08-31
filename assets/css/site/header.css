@@ -3,6 +3,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    max-width: 100vw;
     align-items: baseline;
 }
 

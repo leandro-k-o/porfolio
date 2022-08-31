@@ -125,7 +125,7 @@ function windowSize(){
 window.addEventListener('load', ()=>{
   let th 
 
-  (windowSize().width <= 576) ? th = .4 : th = .9;
+  (windowSize().width <= 576) ? th = .6 : th = .9;
   criarEventosLinks();
 
   new ScrollNav('[data-scrollNav]','active')
