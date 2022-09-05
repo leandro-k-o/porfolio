@@ -38,10 +38,10 @@
 
 .main-formacao{
     display:flex;
-    flex-basis: calc(90vw - 60px);
+    flex-basis: auto;
     flex-direction: column;
     justify-content: center;
-    max-width: 80vw;
+    max-width: calc(100% - 60px);
     border-left: 8px solid green;
     border-radius: 5px;
     padding: 6px 40px;
@@ -132,6 +132,10 @@
     .main-formacao,
     .f-curso{
         padding: 6px 20px;
+    }
+
+    .main-formacao{
+        max-width: 80%;
     }
 
     .f-lista-cursos{

@@ -19,6 +19,7 @@
     height: 480px;
     width: 400px;
     object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(63, 62, 62, 0.54);
 
 }
 

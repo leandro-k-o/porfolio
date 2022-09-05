@@ -1,8 +1,7 @@
 #projetos{
     background-color: var(--cor-c10);
     padding: 40px;
-    box-shadow: inset 0 -260px var(--cor-c1);
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
 }
 
 .projeto-title{
@@ -31,7 +30,7 @@
 
 .projetos-container{
     justify-content:center;
-    gap:40px;
+    gap:50px;
     margin: 40px auto;
 }
 
@@ -40,8 +39,10 @@
     background-color: var(--cor-p);
     height: 390px;
     padding: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(63, 62, 62, 0.54);
+    border: 1px solid #938F99;
 }
 
 .projetos-item-img{
