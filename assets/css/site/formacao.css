@@ -1,21 +1,347 @@
 #formacao{
-    padding-top: 50px;
+    padding: 50px 40px;
+    background-color: var(--cor-c2);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(12, 12, 12, 0.655);
 }
 
-.formacao-fieldset{
-    border-radius: 5px;
-    border: 2px solid var(--cor-pl);
+.formacao-container{
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+}
+
+.f-container{
+    margin-left: 40px;
+}
+
+.formacao-list{
+    list-style: none;
     position: relative;
 }
 
-.fieldset-title{
+.formacao-list::before{
+    content: '';
+    height: 0%;
+    width: 1px;
+    top: 15px;
+    left: 0px;
     position: absolute;
-    background-color: white;
-    padding: 0px 5px;
-    top:-15px;
+    display: block;
+    background-color: var(--cor-line);
 }
 
-#formacao span{
+.formacao-list::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    bottom: 40%;
+    left: -7px;
+    border: 1px solid var(--cor-line);
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    background-color: var(--cor-c2);
+    transition: .3s;
+    opacity: 0;
+}
+
+.formacao-list:has(.formacao-item:hover)::after {
+    background-color: var(--cor-pd);
+    box-shadow: 1px 1px 1px var(--cor-p);
+    transition: .2s; 
+}
+
+.f-list-first{
+    position: relative;
+}
+
+
+.formacao-list .f-list-first::before,
+.cursos-livres h2::before,
+.skills h2::before
+{
+    content:'';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border-radius: 50%;
+    border: 1px solid var(--cor-line);
+    background-color: var(--cor-c1);
+    background-size: cover;
+}
+
+.formacao-list .f-list-first::before{
+    top: 0px;
+    left: -46px;
+    background-image: url('../../../img/school.svg');
+}
+
+.formacao-list li+li{
+    margin-top:10px;
+} 
+
+.formacao-list li+li h2{
+    padding-top: 20px;
+}
+
+.formacao-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    border-radius: .4rem;
+    box-shadow:  3px 3px 6px #c3c3c3,
+                -3px -3px 6px #fdfdfd;
+    transition: .3s;
+    background: linear-gradient(10deg, rgba(241,241,241,1) 0%, rgba(224,224,224,1) 100%);
+}
+
+.formacao-item:hover{
+    transition: .2s;
+    box-shadow: 1px 1px 2px .5px rgba(12, 12, 12, 0.293);
+    box-shadow:  6px 6px 10px #c3c3c3,
+                -6px -6px 10px #fdfdfd;
+}
+
+.formacao-list .formacao-item:hover::before{
+    background-color: var(--cor-pd);
+    box-shadow: 1px 1px 1px var(--cor-p);
+    transition: .2s;
+}
+
+.formacao-item span{
+    font-size: .8rem;
+    color: var(--cor-c7);
+}
+
+.cursos-livres{
+    grid-column: span 2;
+    position: relative;
+}
+.cursos-livres::before{
+    content: '';
+    height: 0%;
+    width: 1px;
+    top: 15px;
+    left: 0px;
+    position: absolute;
+    display: block;
+    background-color: var(--cor-line);
+}
+
+.cursos-livres::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: -7px;
+    top: 50%;
+    border: 1px solid var(--cor-line);
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    background-color: var(--cor-c2);
+    transition: .3s;
+    opacity: 0;
+}
+
+.cursos-livres:has(.f-cursos-livres li:hover)::after{
+    background-color: var(--cor-pd);
+    box-shadow: 1px 1px 1px var(--cor-p);
+    transition: .2s;
+}
+
+.cursos-livres h2{
+    padding-left: 34px;
+}
+
+.cursos-livres h2::before{
+    top: 0px;
+    left: -14px;
+    background-image: url('../../../img/skill3.svg');
+}
+
+.f-cursos-livres{
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    margin-top: 20px;
+    position: relative;
+    gap: 20px;
+    width: 100%;
+}
+
+.f-cursos-livres li{
+    flex-grow: 1;
+    flex-basis: calc(50%);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 20px 20px 20px;
+    border-radius: .4rem;
+    box-shadow: 1px 1px 2px rgba(12, 12, 12, 0.293);
+    box-shadow:  3px 3px 6px #c3c3c3,
+                -3px -3px 6px #fdfdfd;
+    transition: .3s;
+    background: linear-gradient(10deg, rgba(241,241,241,1) 0%, rgba(224,224,224,1) 100%);
+}
+
+.f-cursos-livres li span{
+    color: var(--cor-c7);
+    font-size: .8rem;
+}
+
+.f-cursos-livres li p{
+    font-size: .9rem;
+}
+
+.f-cursos-livres li:hover{
+    transition: .2s;
+    /* box-shadow: 1px 1px 2px .5px rgba(12, 12, 12, 0.293); */
+    filter: drop-shadow(1px 1px 2px rgba(12, 12, 12, 0.293));
+    box-shadow:  4px 4px 10px #c3c3c3,
+                -4px -4px 10px #fdfdfd;
+}
+
+.skills{
+    position: relative;
+    padding-left: 60px;
+}
+
+.skills::before{
+    content: '';
+    height: 0%;
+    width: 1px;
+    top: 15px;
+    left: 20px;
+    position: absolute;
+    display: block;
+    background-color: var(--cor-line);
+}
+
+.skills::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 13px;
+    top: 40%;
+    border: 1px solid var(--cor-line);
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    background-color: var(--cor-c2);
+    transition: .3s;
+    opacity: 0;
+}
+
+.skills:has(.f-skills li:hover)::after{
+    background-color: var(--cor-pd);
+    box-shadow: 1px 1px 1px var(--cor-p);
+    transition: .2s;
+}
+
+.skills h2::before{
+    top: 0px;
+    left: -55px;
+    background-image: url('../../../img/skill2.svg');
+}
+
+.f-skills{
+    list-style: none;
+    position: relative;
+    display: flex;
+    padding: 20px 0 0 0;
+    gap: 6px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.f-skills li{
+    display: flex;
+    align-items: center;
+    color: var(--cor-c2);
+    font-size: .9rem;
+    line-height: .6;
+    background-color: var(--cor-p);
+    padding: 6px 12px;
+    position: relative;
+    border-radius: .3rem;
+    border: 2px solid #37A63E;
+}
+
+@media (max-width:767px){
+    .f-skills{
+        width: 100%;
+    }
+
+    .skills{
+        padding-left: 32px;
+    }
+
+    .skills h2::before{
+        left: -47px;
+        top:-5px;
+    }
+
+    .skills::after{
+        left:-7px;
+        top: 50%;
+    }
+
+    .skills::before{
+        left:0px;
+        height: 50%;
+    }
+
+    .formacao-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:700px){
+    .f-cursos-livres{
+        grid-template-rows: auto auto;
+    }
+
+    #formacao{
+        padding: 20px;
+    }
+}
+
+@media (max-width:576px){
+    #formacao{
+        padding: 20px 8px
+    }
+}
+
+@media (max-width:507px){
+    #formacao{
+        padding: 20px 8px;
+    }
+
+    .f-container{     
+        margin-left: .7rem; 
+    }
+
+    .f-cursos-livres{
+        grid-template-rows: repeat(4, auto);
+    }
+}
+
+/* CODIGO NOVO */
+
+
+#formacao h1 span,
+#formacao h2 span{
     color: var(--cor-p)
 }
 
@@ -33,7 +359,8 @@
     z-index: -1;
     top:-14px;
     left: -2px;
-
+    box-shadow:  3px 3px 6px #c3c3c3,
+    -3px -3px 6px #fdfdfd;
 }
 
 .main-formacao{
@@ -55,11 +382,6 @@
     position: absolute;
     left:-50px;
     color: var(--cor-c6);
-}
-
-.f-facul{
-    max-width: 400px;
-    margin-bottom: 8px;
 }
 
 .f-lista-cursos
@@ -92,16 +414,6 @@
 
 .f-curso::before{
     content:'2022';
-}
-
-.f-skills{
-    padding-top: 40px;
-    padding-left: 40px;
-}
-
-.f-skills li{
-    background-color: var(--cor-pl);
-    color:var(--cor-c12);
 }
 
 .idioma-title{

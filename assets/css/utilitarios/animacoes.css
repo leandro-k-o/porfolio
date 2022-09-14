@@ -22,7 +22,7 @@
 .js [data-animate^='s-right'].scrolled,
 .js [data-animate^='s-bottom'].scrolled
 {
-    animation: scrollIn .4s ease forwards;
+    animation: scrollIn .4s ease forwards .5s;
 }
 
 .js [data-animate*='grow'].scrolled{
@@ -212,23 +212,23 @@
   }
 }
 
-.projetos-item-img img{
-  filter: grayscale(.3);
-  transition: 1s;
+.js .scrolled:is(.formacao-list, .cursos-livres, .skills)::before{
+  transition-delay: 1s;
+  transition: 3s;
+  height: 50%;
 }
 
-.projetos-item:hover .projetos-item-img img{
-  transition: .6s;
-  transform: scale(1.02);
-  filter: none;
+.js .scrolled.skills::before{
+  height: 40%;
 }
 
-.projetos-item:hover{
-  transition: .3s;
-  filter: drop-shadow(3px 3px 6px rgba(63, 62, 62, 0.54)); 
+.js .scrolled:is(.formacao-list, .cursos-livres, .skills)::after{
+  animation: show .3s ease 1.6s forwards;
+  /* animation-delay: ; */
 }
-.projetos-item{
-  transition: .3s;
-  filter:none;
+
+@media (max-width:767px){
+  .js .scrolled.skills::before{
+    height: 50%;
+  }
 }
-  

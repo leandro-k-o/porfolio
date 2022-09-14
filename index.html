@@ -14,8 +14,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="container">
-        <nav class="navbar navbar-light navbar-expand-sm nav-lko fixed-top">
+
+    <!-- SCOLL TOP Button -->
+    <div id="scrollTop">
+        <a href="#home"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.85 39.25V13.1L10.35 25.6L8.75 24L24 8.75L39.25 24L37.65 25.6L25.15 13.1V39.25H22.85Z" fill="black"/>
+            </svg>
+            </a>        
+    </div>
+    <!-- SCOLL TOP Button -->
+
+
+    <header id="header" class="">
+        <nav class="navbar navbar-light navbar-expand-sm nav-lko ">
             <div class="container">
                 <a class="navbar-brand" href="#home"><img src="img/logo.svg" alt="Logotipo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -45,106 +56,119 @@
     </header>
    
     <main id="home">
-        <div class="container mt-5">
-            <div class="row pt-5 home-container mx-sm-1">
-                <div class="col-md-6 home-text py-sm-5 py-3 shadow-sm" data-animate="s-left">
-                    <div class="home-text-container border-r">
-                        <h1 class="t-2">olá, eu me chamo <br> Leandro Kenji Oshiro</h1>
-                        <h1 class="st-1"><span>&#60; </span>desenvolvedor front-end <span>/&#62;</span></h1>
-                        <p>Itanhaém - SP</p>
+            <div class="row pt-3 home-container mx-sm-1">
+                    <div class="home-text-container col-md-7" data-animate="s-bottom">
+                        <h2 class="st-2 cor-c6 mb-4">👋 Olá, eu me chamo Leandro Kenji Oshiro</h2>
+                        <h1 class="t-1 title mb-3">desenvolvedor front-end</h1>
+                        <p class="cor-c6">Eu desenvolvo sites e aplicações web utilizando novas tecnologias. Sempre aprimorando minhas habilidades e capacidades técnicas.</p>
                     </div>
+                <div class="col col-md-5 img-container ps-md-0" data-animate="s-bottom">
+                    <img src="img/perfilcort.png" alt="Leandro com 2 cães no sofá" width="400" height="400"/>
                 </div>
-                <div class="col-md-6 img-container ps-md-0" data-animate="s-right">
-                    <img src="img/pingo-neka-sofa.jpg" alt="Leandro com 2 cães no sofá" width="546.67" height="410" class="shadow-sm" />
-                </div>
-            </div>
-        </div>
-            
+            </div>            
     </main>
 
-    <section data-scrollNav id="formacao" class="mt-5">
-        <div class="container">
-            <div class="row mb-4">
-                <h1 class="t-1 cor-c12 formacao-titulo" data-animate="s-left">formação<span>.</span></h1>
+    <section id="formacao" class="mt-5">
+        <div class="container-md">
+            <div class="row mb-4 mt-5 ms-4">
+                <h1 class="t-1 cor-c12 formacao-titulo" data-animate="s-bottom">formação<span>.</span></h1>
             </div>
             <div class="row mt-5">
-                <div class="main-formacao col mt-3 mb-5 cor-c10 shadow-sm" data-animate="grow s-left ">
-                    <h4 class="st-3 f-facul">Análise e Desenvolvimento de Sistemas com ênfase em Jogos Digitais</h4>
-                    <p class="text-md cor-c6">FATEC São Caetano do  Sul</p>
-                </div>
-                <div class="col-md-7 formacao-fieldset">
-                    <h2 class="st-2 fieldset-title" data-animate="s-left">cursos<span>.</span></h2>
-                    <ul class="text-md f-lista-cursos container">
-                        <li class="f-curso shadow-sm" data-animate="grow s-left">
-                            <h5 class="cor-c10">UI Design</h5>
-                            <p class="text-sm cor-c6">Origamid</p>
+
+                <div class="formacao-container">
+                    <ul class="formacao-list f-container" data-animate="s-bottom">
+                        <li class="f-list-first">
+                            <h2 class="st-2" data-animate="s-bottom">educação<span>.</span></h2>
                         </li>
-                        <li class="f-curso shadow-sm" data-animate="grow s-left">
-                            <h5 class="cor-c10">HTML e CSS</h5>
-                            <p class="text-sm cor-c6">Origamid</p>
-                        </li>
-                        <li class="f-curso shadow-sm" data-animate="grow s-left">
-                            <h5 class="cor-c10">JavaScript ES6</h5>
-                            <p class="text-sm cor-c6">Origamid</p>
-                        </li>
-                        <li class="f-curso shadow-sm" data-animate="grow s-left">
-                            <h5 class="cor-c10">React</h5>
-                            <p class="text-sm cor-c6">Origamid</p>
+                        <li class="formacao-item" data-animate="s-bottom">
+                            <div>
+                                <span>2012</span>
+                                <h4 class="st-3">Análise e Desenvolvimento de Sistemas com ênfase em Jogos Digitais</h4>
+                                <p class="text-md cor-c8">FATEC São Caetano do  Sul</p>
+                            </div>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-4 ms-md-5 mt-5 mt-md-0 formacao-fieldset" data-animate="s-right">
-                            <h2 class="st-2 fieldset-title">skills<span>.</span></h2>
-                            <ul class="text-sm flags f-skills container">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>REACT</li>
-                                <li>BOOTSTRAP</li>
-                                <li>JAVASCRIPT</li>
-                                <li>UI DESIGN</li>
-                            </ul>
-                            <h3 class="st-2 idioma-title">inglês</h3>
-                            <p class="text-md">Intermediário</p>
+                    <div class="skills f-container" data-animate="s-bottom">
+                        <h2 class="st-2 f-list-first" data-animate="s-bottom">skills<span>.</span></h2>
+                        <ul class="f-skills" data-animate="s-bottom">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>REACT</li>
+                            <li>BOOTSTRAP</li>
+                            <li>JAVASCRIPT</li>
+                            <li>UI DESIGN</li>
+                            <li>WORDPRESS</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cursos-livres f-container" data-animate="s-bottom">
+                        <h2 class="st-2" data-animate="s-bottom">cursos livres<span>.</span></h2>
+                        <ul class="f-cursos-livres" data-animate="s-bottom">
+                            <li class="">
+                                    <span>2022</span>
+                                    <h4 class="st-3 f-facul">UI Design</h4>
+                                    <p class="text-md cor-c8">Origamid Cursos</p>
+                           
+                            </li>
+                            <li class="">                       
+                                    <span>2022</span>
+                                    <h4 class="st-3 f-facul">HTML e CSS</h4>
+                                    <p class="text-md cor-c8">Origamid Cursos</p>                            
+                            </li>
+                            <li class="">                           
+                                    <span>2022</span>
+                                    <h4 class="st-3 f-facul">JavaScript ES6</h4>
+                                    <p class="text-md cor-c8">Origamid Cursos</p>                               
+                            </li>
+                            <li class="">
+                            
+                                    <span>2022</span>
+                                    <h4 class="st-3 f-facul">React</h4>
+                                    <p class="text-md cor-c8">Origamid Cursos</p>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section data-scrollNav id="projetos" class="mt-5 container-xl">
-        <div class="row">
-            <div class="projeto-title" data-animate="s-left">
+    <section data-scrollNav id="projetos" class="mt-5">
+        <div class="row p-main-container container-xl">
+            <div class="projeto-title" data-animate="s-bottom">
                 <h1 class="t-1 cor-c1 projeto-title-t">projetos<span class="cor-p">.</span></h1>
                 <p class="cor-c5 text-md mt-4">Projetos realizados para estudo e para fins profissionais.</p>
             </div>
             <div class="projetos-container row g-0">
-                <div class="col-lg col-md-5 col-sm-7 projetos-item" data-animate="s-bottom" data-p-item>
+                <div class="col-lg col-md-5 col-sm-7 projetos-item" data-animate="s-bottom">
                     <div class="projetos-item-img">
                         <img src="img/p-item1.jpg" alt="Foto do primeiro portfolio" />
                     </div>
                     <div class="content">
                         <span class="stack">HTML | CSS | JAVASCRIPT</span>
                         <a href="https://leandro-k-o.github.io/port2/" target="_blank">
-                            <h3 class="st-2 p-item-title">primeiro portfólio<span class="cor-p">.</span></h3>
+                            <h3 class="st-2 p-item-title">primeiro portfólio<span class="cor-p">.</span></h3><span class="p-open-icon"></span>
                         </a>
                         <p class="text-sm p-item-text">Portfólio criado em HTML/CSS e JavaScript puro. Procurei deixar o site totalmente responsivo e funcionando independente de CSS/JavaScript.</p>
                         <span class="projeto-data">06/2022</span>
                     </div>
                 </div>
-                <div class="col-lg col-md-5 col-sm-7 projetos-item" data-animate="s-bottom" data-p-item>
+                <div class="col-lg col-md-5 col-sm-7 projetos-item" data-animate="s-bottom">
                     <div class="projetos-item-img">
                         <img src="img/p-item2.jpg" alt="Foto do portfolio recente" />
                     </div>
                     <div class="content">
                         <span class="stack">HTML | CSS | JAVASCRIPT | BOOTSTRAP</span>
                         <a href="">
-                            <h3 class="st-2 p-item-title">portfólio recente<span class="cor-p">.</span></h3>
+                            <h3 class="st-2 p-item-title">portfólio recente<span class="cor-p">.</span></h3><span class="p-open-icon"></span>
                         </a>
                         <p class="text-sm p-item-text">Utilizei HTML/CSS/JavaSript puro e alguns recursos do Bootstrap. Desenhei o site no Figma e tentei deixá-lo simples e funcional. </p>
                         <span class="projeto-data">08/2022</span>
                     </div>
                 </div>
-                <div class="col-lg col-md-5 col-sm-7 projetos-item" data-animate="s-bottom" data-p-item>
+                <div class="col-lg col-md-5 col-sm-7 projetos-item" data-animate="s-bottom">
                     <div class="col-sm projetos-item">
                         <div class="projetos-item-img">
                             <img src="" alt="">
@@ -152,7 +176,7 @@
                         <div class="content">
                             <span class="stack">HTML | CSS | JAVASCRIPT</span>
                             <a href="">
-                                <h3 class="st-2 p-item-title">projeto 3<span class="cor-w">.</span></h3>
+                                <h3 class="st-2 p-item-title">projeto 3<span class="cor-w">.</span></h3><span class="p-open-icon"></span>
                             </a>
                             <p class="text-sm p-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis placeat culpa repudiandae incidunt odio cumque harum, excepturi doloribus!</p>
                             <span class="projeto-data">22/07/2022</span>
@@ -163,12 +187,12 @@
         </div>
     </section>
 
-    <section data-scrollNav id="contato" class="mt-5 container-lg">
-        <div class="mt-5 contato-container row">
-            <div class="col-md contato-img" data-animate="s-left">
+    <section data-scrollNav id="contato" class="mt-5">
+        <div class="mt-5 container-lg contato-container row">
+            <div class="col-md contato-img" data-animate="s-bottom">
                 <img src="img/euperfil.jpg" alt="Minha foto de perfil" height="480" width="400"/>
             </div>
-            <div class="col-md contato-content" data-animate="s-right">
+            <div class="col-md contato-content" data-animate="s-bottom">
                 <h1 class="t-1 contato-title">contato<span class="cor-w">.</span></h1>
                 <p class="text-md cor-c3">Vamos conversar para realizar um projeto juntos.</p>
                 <div class="contato-email">
@@ -187,7 +211,7 @@
         </div>
     </section>
 
-    <footer class="container">
+    <footer class="">
         <p>Desenvolvido por Leandro Kenji Oshiro</p>
     </footer>
   

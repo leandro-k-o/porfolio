@@ -1,35 +1,35 @@
+#home{
+    background-color: var(--cor-c2);
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 2px 2px 5px rgba(12, 12, 12, 0.623);
+    padding-top: 40px;
+}
 
 .home-container{
     align-items: center;
-}
-
-.home-text{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--cor-c1);
-    border: 1px solid var(--cor-pl);
-    height: 100%;
-    position: relative;
-}
-
-.home-text::before{
-    content:'';
-    width: 40px;
-    height: 40px;
-    background-color: var(--cor-p);
-    border-radius: 5px;
-    position: absolute;
-    top:-16px;
-    left:-16px;
+    padding: 40px;
 }
 
 .home-text-container{
     padding-left: 40px;
 }
-.home-text-container h1,
+.home-text-container h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.3;
+}
+
+.home-text-container h1::after{
+    content:'.';
+    color: var(--cor-p);
+    display: inline-block;
+}
+
 .home-text-container p{
+    letter-spacing: .05ch;
+    font-size: 1.125rem;
+    line-height: 1.5;
     color: var(--cor-c6);
 }
 
@@ -45,31 +45,42 @@
 }
 
 .img-container{
-    /* padding-left: 0; */
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-container img{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    filter:drop-shadow(1px 1px 2px rgba(12, 12, 12, 0.655));
+    /* object-fit: cover; */
+}
+
+@media (max-width:960px){
+    .home-text-container h1{
+        font-size: calc(3.4vw + 1.1rem);
+    }
+}
+
+@media (max-width:767px){
+    .img-container img{
+        width: 400px;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width:580px){
-    .home-text::before{
-        content:'';
-        width: 30px;
-        height: 30px;
-        background-color: var(--cor-p);
-        border-radius: 5px;
-        position: absolute;
-        top:-8px;
-        left:4px;
+    .home-container{
+        padding: 20px 10px;
     }
 
     .home-text-container{
-        padding-left: 20px;
+        padding: 20px 8px;
     }
 
     .img-container img{
-        height: 280px;
+        /* height: 280px; */
     }
 }

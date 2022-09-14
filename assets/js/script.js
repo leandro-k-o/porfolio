@@ -24,6 +24,32 @@ class Scroll{
   }
 }
 
+class ScrollToTop{
+  constructor(name){
+    this.scrollIcon = document.getElementById(name);
+    this.elements = document.getElementById('header');
+    if(this.scrollIcon && this.elements) this.init();   
+  } 
+
+  init(){
+      this.verElementos();
+      this.observer.observe(this.elements)
+  }
+  verElementos(){
+    this.options = {
+        threshold: '.9',
+        rootMargin: '100%',
+    };
+    this.observer = new IntersectionObserver((entries, observer)=>{
+      if(!entries[0].isIntersecting){
+        this.scrollIcon.classList.add('active')
+      }else if(entries[0].isIntersecting && this.scrollIcon.classList.length !== 0)
+        this.scrollIcon.classList.remove('active')   
+    },this.options)
+  }
+
+}
+
 class ScrollNav extends Scroll{
   constructor(name, classToAdd){
     super(name)
@@ -115,7 +141,7 @@ function criarEventosLinks(){
 
 function getElemOffSetTop({target}){
   const id = target.getAttribute('href').replace('#','')
-  return document.getElementById(id).offsetTop - 40
+  return document.getElementById(id).offsetTop - 20
 }
 
 function windowSize(){
@@ -127,9 +153,9 @@ window.addEventListener('load', ()=>{
 
   (windowSize().width <= 576) ? th = .6 : th = .9;
   criarEventosLinks();
-
   new ScrollNav('[data-scrollNav]','active')
 
   const scroll = new ScrollIn('[data-animate]','scrolled',th);
+  const scrolToTop = new ScrollToTop('scrollTop');
 } );
 window.addEventListener('resize', () => criarEventosLinks());

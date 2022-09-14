@@ -1,6 +1,6 @@
 :root{
     /* cores primarias  */
-
+    --cor-deg: linear-gradient(132deg, rgba(55,166,62,1) 0%, rgba(4,71,8,1) 100%);
     --cor-p: #4AB851;
     --cor-pd:#37A63E;
     --cor-pbd:#002E03;
@@ -20,6 +20,7 @@
     --cor-c10:#525252;
     --cor-c11:#3D3D3D;
     --cor-c12:#141414;
+    --cor-line: #17591b;
 }
 
 *{
@@ -36,6 +37,7 @@ body{
     max-width: 1200px;
     margin:0 auto;
     overflow-x: hidden;
+    background: linear-gradient(132deg, rgba(55,166,62,1) 0%, rgba(4,71,8,1) 100%);
 }
 
 img{
@@ -74,6 +76,50 @@ h5{
         border-radius: 5px;
 }
 
+#scrollTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--cor-c2);
+    border-radius: 50%;
+    filter:opacity(0);
+    transition: .2s;
+    pointer-events: none;
+    transform: translateY(70px);
+    z-index: 99;
+}
 
 
+#scrollTop.active{
+    transition: .3s;
+    filter: opacity(.5);
+    transform: initial;
+    pointer-events: auto;
+}
 
+#scrollTop:hover{
+    filter: none;
+    scale: 1.09;
+    transition: .2s;
+    outline: 2px solid #37A63E;
+}
+
+#scrollTop a svg{
+}
+
+#scrollTop a svg > *{
+    fill:#37A63E;
+}
+
+
+@media (max-width: 400px){
+    #scrollTop{
+        bottom: 8px;
+        right: 0px;
+        scale: .5;
+    }
+
+    #scrollTop:hover{
+        transform: scale(.6);
+    }
+}
