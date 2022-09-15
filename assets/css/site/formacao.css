@@ -456,5 +456,7 @@
 }
 
 @media (max-width:580px){
-
+    #formacao{
+        box-shadow: none;
+    }
 }

@@ -13,10 +13,11 @@
 .home-text-container{
     padding-left: 40px;
 }
-.home-text-container h1{
+
+.home-text-container h1.t-1{
+    font-size: min(calc(1.8rem + 1.5vw), 6rem);
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 3.5rem;
     line-height: 1.3;
 }
 
@@ -33,16 +34,7 @@
     color: var(--cor-c6);
 }
 
-.home-text-container h1.st-1{
-    font-size: calc(.8rem + 1.3vw);
-}
 
-.home-text-container h1 span{
-    font-size: 2.1rem;
-    font-size: calc(1.4rem + 1.1vw);
-    font-weight: 700;
-    color: var(--cor-p);
-}
 
 .img-container{
     padding-bottom: 40px;
@@ -72,15 +64,25 @@
 }
 
 @media (max-width:580px){
+
+    #home{
+        box-shadow: none;
+        padding-top: 12px;
+    }
+
     .home-container{
-        padding: 20px 10px;
+        text-align: center;
     }
 
     .home-text-container{
         padding: 20px 8px;
     }
 
-    .img-container img{
-        /* height: 280px; */
+    .home-text-container h2{
+        font-size: 1.1rem;
+    }
+
+    .home-text-container h1.t-1{
+        font-size: calc(1.425rem + 1.3vw);
     }
 }

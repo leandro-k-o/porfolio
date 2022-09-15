@@ -13,8 +13,24 @@ header{
 
 }
 
+@media (max-width:576px){
+    header{
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+        padding: 18px 12px 0 12px;
+    }
+
+    .navbar-brand img{
+        width: 60%;
+    }
+
+    header .nav-lko{
+        padding-bottom: 0px;
+    }
+}
+
 header .nav-lko{
-    /* padding-top: 20px; */
     width: 100%;
     display: block;
 }
@@ -50,3 +66,7 @@ header ul li a.nav-link .active{
     border-bottom: 1px solid lightgrey;
 }
 
+#header .navbar-toggler{
+    padding: 2px;
+    border-radius: .125rem;
+}
